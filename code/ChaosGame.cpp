@@ -24,7 +24,7 @@ int main()
 
     Text instructions;
     instructions.setFont(font);
-    instructions.setString("Click 3 points in the shape of a triangle, then a 4th point to begin.")
+    instructions.setString("Click 3 points in the shape of a triangle, then a 4th point to begin.");
     instructions.setCharactersize(28);
     text.setFillColor(sf::Color::Green);
 
@@ -59,6 +59,7 @@ int main()
                     {
                         ///fourth click
                         ///push back to points vector
+                        points.push_back(Vector2f(event.mouseButton.x, event.mouseButton.y));
                     }
                 }
             }
