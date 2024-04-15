@@ -19,6 +19,15 @@ int main()
     vector<Vector2f> vertices;
     vector<Vector2f> points;
 
+    Font font;
+    font.loadFromFile("times-new-roman-bold-italic.ttf");
+
+    Text instructions;
+    instructions.setFont(font);
+    instructions.setString("Click 3 points in the shape of a triangle, then a 4th point to begin.")
+    instructions.setCharactersize(28);
+    text.setFillColor(sf::Color::Green);
+
 	while (window.isOpen())
 	{
         /*
