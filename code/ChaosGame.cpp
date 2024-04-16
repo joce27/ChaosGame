@@ -113,8 +113,6 @@ int main()
 
         for (int i = 0; i < points.size(); i++)
         {
-
-            
             CircleShape newPointCircle(2.5f);
             newPointCircle.setPosition(points[i]);
             newPointCircle.setFillColor(Color::Green);
