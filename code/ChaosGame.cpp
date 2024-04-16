@@ -26,7 +26,7 @@ int main()
 
     Text instructions;
     instructions.setFont(font);
-    instructions.setString("Click 3 points in the shape of a triangle, then a 4th point to begin.");
+    instructions.setString("Click 3 points in the shape of a triangle, then a 4th point inside to begin.");
     instructions.setCharacterSize(28);
     instructions.setFillColor(sf::Color::Green);
 
@@ -84,7 +84,7 @@ int main()
             ///calculate midpoint between random vertex and the last point in the vector
             ///push back the newly generated coord.
 
-            for (int i = 0; i < 50; i++)
+            for (int i = 0; i < 500; i++)
             {
                 int randNum = rand() % 3;
                 Vector2f midpoint;
@@ -107,7 +107,7 @@ int main()
         {
             RectangleShape rect(Vector2f(10,10));
             rect.setPosition(Vector2f(vertices[i].x, vertices[i].y));
-            rect.setFillColor(Color::Yellow);
+            rect.setFillColor(Color::Green);
             window.draw(rect);
         }
 
